@@ -1,0 +1,326 @@
+body {
+    width: 100%;
+    height: 100%;
+    /* min-width: 1096px;
+    min-height: 612px; */
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+@keyframes lip {
+    50% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+@keyframes star {
+    0% {
+        bottom: -999%;
+    }
+    50% {
+        bottom: -999%;
+    }
+    60% {
+        bottom: -999%;
+    }
+    70% {
+        bottom: -999%;
+        background-size: 0;
+    }
+    80% {
+        bottom: -999%;
+        background-size: 0;
+    }
+    90% {
+        bottom: -999%;
+        background-size: 0;
+    }
+    100% {
+        top: 30%;
+        left: 40%;
+        background-size: 100%;
+    }
+}
+@keyframes sunglases {
+    0% {
+        top: 15%;
+    }
+    80% {
+        top: 15%;
+    }
+    85% {
+        top: 15%;
+    }
+    90% {
+        top: 20%;
+    }
+    95% {
+        top: 40%;
+    }
+    100% {
+        top: 35%;
+    }
+}
+@keyframes uphand {
+    0% {
+        right: 73%;
+    }
+    10% {
+        right: 73%;
+    }
+    30% {
+        right: 40%;
+    }
+    50% {
+        right: 20%;
+    }
+    70% {
+        right: 7%;
+    }
+    100% {
+        bottom: -999%;
+    }
+}
+@keyframes downhand {
+    0% {
+        right: 73%;
+    }
+    10% {
+        right: 73%;
+    }
+    100% {
+        left: -999%;
+    }
+}
+@keyframes vhand {
+    0% {
+        top: -900%;
+    }
+    10% {
+        bottom: 15%;
+        rotate: 0deg;
+    }
+    30% {
+        bottom: 15%;
+        rotate: 0deg;
+    }
+    50% {
+        bottom: 15%;
+        rotate: 0deg;
+    }
+    70% {
+        bottom: 15%;
+        rotate: 0deg;
+    }
+    80% {
+        bottom: 5%;
+        rotate: 180deg;
+    }
+    90% {
+        bottom: 7%;
+        rotate: 175deg;
+    }
+    100% {
+        bottom: 5%;
+        rotate: 180deg;
+    }
+}
+@keyframes bg1 {
+    50% {
+        background-size: 0;
+    }
+    55% {
+        background: url('./img/bgPeace.png') no-repeat 0 0;
+        right: -50%;
+        top: 5%;
+    }
+    80% {
+        background: url('./img/bgPeace.png') no-repeat 0 0;
+        right: -55%;
+        top: 5%;
+    }
+    100% {
+        background: url('./img/bgPeace.png') no-repeat 0 0;
+        right: -60%;
+        top: 5%;
+    }
+}
+@keyframes bg2 {
+    50% {
+        background-size: 0;
+    }
+    55% {
+        background-size: 0;
+    }
+    80% {
+        background: url('./img/bgAtown.png') no-repeat 0 0;
+        left: -50%;
+        top: 15%;
+    }
+    100% {
+        background: url('./img/bgAtown.png') no-repeat 0 0;
+        left: -50%;
+        top: 20%;
+    }
+}
+@keyframes bg3 {
+    50% {
+        background-size: 0;
+    }
+    55% {
+        background-size: 0;
+    }
+    85% {
+        background-size: 0;
+    }
+    95% {
+        background: url('./img/bgYeah.png') no-repeat 0 0;
+        top: 40%;
+        left: 60%;
+    }
+    100% {
+        background: url('./img/bgYeah.png') no-repeat 0 0;
+        top: 50%;
+        left: 70%;
+    }
+}
+
+.bg1 {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+
+    position: absolute;
+    animation: linear bg1 5s infinite;
+}
+
+.bg2 {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    position: absolute;
+    animation: linear bg2 5s infinite;
+}
+
+.bg3 {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    position: absolute;
+    animation: linear bg3 5s infinite;
+}
+
+.riceman {
+    width: 600px;
+    height: 600px;
+
+    position: relative;
+    left: 50%;
+    margin: 50px auto auto -300px;
+}
+.riceman .head {
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.riceman .face {
+    width: 330px;
+    height: 370px;
+    background: url('./img/face.svg') no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.riceman .head .face .left-eye {
+    width: 47px;
+    height: 16px;
+    background: url('./img/left-eye.svg') no-repeat 0 0;
+    position: absolute;
+    top: 40%;
+    left: 36%;
+}
+.riceman .head .face .right-eye {
+    width: 35px;
+    height: 21px;
+    background: url('./img/right-eye.svg') no-repeat 0 0;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.riceman .head .face .lip {
+    width: 60px;
+    height: 35px;
+    background: url('./img/lip.svg') no-repeat 0 0;
+    position: absolute;
+    top: 66%;
+    left: 20%;
+    animation: linear lip 5s infinite;
+    rotate: 180deg;
+}
+
+.riceman .head .face .star {
+    width: 200px;
+    height: 200px;
+    background: url('./img/star.svg') no-repeat 0 0;
+    position: absolute;
+    animation: linear star 5s infinite;
+    z-index: 1000;
+}
+
+.riceman .head .sunglasses {
+    width: 312px;
+    height: 102px;
+    background: url('./img/sunglases.svg') no-repeat 0 0;
+    position: absolute;
+    top: 15%;
+    animation: linear sunglases 5s infinite;
+}
+
+.riceman .hands {
+    width: 532px;
+    height: 234px;
+
+    position: absolute;
+    top: 50%;
+    margin-left: 26px;
+    z-index: 200;
+}
+.riceman .hands .up-hand {
+    width: 140px;
+    height: 150px;
+    background: url('./img/up-hand.svg') no-repeat 0 0;
+    position: absolute;
+
+    animation: linear uphand 5s infinite;
+}
+
+.riceman .hands .down-hand {
+    width: 140px;
+    height: 150px;
+    background: url('./img/down-hand.svg') no-repeat 0 0;
+    position: absolute;
+    bottom: -20%;
+    animation: linear downhand 5s infinite;
+}
+
+.riceman .hands .v-hand {
+    width: 140px;
+    height: 220px;
+    background: url('./img/v-hand.svg') no-repeat 0 0;
+    position: absolute;
+
+    animation: cubic-bezier(1, 0.13, 0.1, 1.77) vhand 5s infinite;
+}
