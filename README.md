@@ -1,6 +1,8 @@
 # Tiktok-Man
 캐릭터 그리기(내가그린기린그림 진짜진짜최종.ptsd)
 
+* 실행 URL : https://oqoqoh.github.io/Tiktok-Man/
+
 틱톡맨 썸네일
 
 
